@@ -32,7 +32,7 @@
       "display": "Reinforcements",
       "color": "W",
       "query": "otag:multiple-bodies id>=w -t:creature (st:expansion r<r) sort:date",
-      "url": "https:scryfall.com/search?q=otag%3Amultiple-bodies+id%3E%3Dw+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&order=name&as=grid&unique=prints",
+      "url": "https://scryfall.com/search?q=otag%3Amultiple-bodies+id%3E%3Dw+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&order=name&as=grid&unique=prints",
       "help": "White spell that creatures two or more tokens"
     },
     "giantkiller": {
@@ -40,7 +40,7 @@
       "color": "W",
       "category": "removal",
       "query": "id=w (otag:removal otag:hate-high-pt or otag:hate-high-mv) (st:expansion r<r) sort:date",
-      "url": "https:scryfall.com/search?q=id%3Dw+%28otag%3Aremoval+otag%3Ahate-high-pt+or+otag%3Ahate-high-mv%29+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "url": "https://scryfall.com/search?q=id%3Dw+%28otag%3Aremoval+otag%3Ahate-high-pt+or+otag%3Ahate-high-mv%29+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
       "help": "White removal for large creatures"
     },
     "joust": {
@@ -48,7 +48,7 @@
       "color": "W",
       "category": "removal",
       "query": "otag:hate-attacker (st:expansion r<r) sort:date",
-      "url": "https:scryfall.com/search?q=otag%3Ahate-attacker+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=released",
+      "url": "https://scryfall.com/search?q=otag%3Ahate-attacker+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=released",
       "help": "White removal that damages an attacking or blocking creature",
       "code": "CW13"
     },
@@ -57,7 +57,7 @@
       "color": "W",
       "category": "removal",
       "query": "otag:banish -t:creature (st:expansion r<r) sort:date",
-      "url": "https:scryfall.com/search?q=otag%3Abanish+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=released",
+      "url": "https://scryfall.com/search?q=otag%3Abanish+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=released",
       "help": "White enchantment that exiles a permanent until it leaves"
     },
     "outnumber": {
@@ -65,7 +65,7 @@
       "color": "W",
       "category": "removal",
       "query": "otag:outnumber (st:expansion r<r) sort:date",
-      "url": "https:scryfall.com/search?q=otag%3Aoutnumber+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "url": "https://scryfall.com/search?q=otag%3Aoutnumber+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
       "help": "White removal that deals damage based on board size"
     },
     "pacifism": {
