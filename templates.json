@@ -337,7 +337,7 @@
       "category": "resource",
       "query": "otag:pure-draw otag:life-for-cards id>=b -t:creature (st:expansion r<r) sort:date",
       "url": "https://scryfall.com/search?q=otag%3Apure-draw+otag%3Alife-for-cards+id%3E%3Db+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
-      "help": "Black spell that draws two cards",
+      "help": "Black spell that draws two cards"
     },
     "pinger": {
       "display": "Pinger",
