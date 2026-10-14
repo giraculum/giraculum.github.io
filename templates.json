@@ -3,52 +3,52 @@
     "banisher": {
       "display": "Banisher",
       "color": "W",
-      "query": "otag:banish t:creature (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Abanish+t%3Acreature+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=released",
+      "query": "otag:banish t:creature (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Abanish+t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "White creature that exiles a permanent until it leaves"
     },
     "marshal": {
       "display": "Marshal",
       "color": "W",
-      "query": "otag:activated-ability otag:power-boost-to-all id>=w (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aactivated-ability+otag%3Apower-boost-to-all+id%3E%3Dw+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:activated-ability otag:power-boost-to-all id>=w (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Aactivated-ability+otag%3Apower-boost-to-all+id%3E%3Dw+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "White creature with an activated ability to pump the board"
     },
     "pridemate": {
       "display": "Pridemate",
       "color": "W",
-      "query": "otag:repeatable-pp-counters id>=w (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Arepeatable-pp-counters+id%3E%3Dw+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:repeatable-pp-counters id>=w (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Arepeatable-pp-counters+id%3E%3Dw+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "White creature that grows over time"
     },
     "angel": {
       "display": "Serra Angel",
       "color": "W",
-      "query": "kw:flying t:creature id=w (st:expansion r:u) sort:date",
-      "url": "https://scryfall.com/search?q=kw%3Aflying+t%3Acreature+id%3Dw+%28st%3Aexpansion+r%3Au%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "kw:flying t:creature id=w (st:expansion r:u)",
+      "url": "https://scryfall.com/search?q=kw%3Aflying+t%3Acreature+id%3Dw+%28st%3Aexpansion+r%3Au%29&unique=cards&as=grid&order=released",
       "help": "White uncommon with large stats and flying"
     },
     "tokens": {
       "display": "Reinforcements",
       "color": "W",
-      "query": "otag:multiple-bodies id>=w -t:creature (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Amultiple-bodies+id%3E%3Dw+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&order=name&as=grid&unique=prints",
+      "query": "otag:multiple-bodies id>=w -t:creature (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Amultiple-bodies+id%3E%3Dw+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29&order=released&as=grid&unique=prints",
       "help": "White spell that creatures two or more tokens"
     },
     "giantkiller": {
       "display": "Giant Killer",
       "color": "W",
       "category": "removal",
-      "query": "id=w (otag:removal otag:hate-high-pt or otag:hate-high-mv) (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=id%3Dw+%28otag%3Aremoval+otag%3Ahate-high-pt+or+otag%3Ahate-high-mv%29+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "id=w (otag:removal otag:hate-high-pt or otag:hate-high-mv) (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=id%3Dw+%28otag%3Aremoval+otag%3Ahate-high-pt+or+otag%3Ahate-high-mv%29+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "White removal for large creatures"
     },
     "joust": {
       "display": "Joust",
       "color": "W",
       "category": "removal",
-      "query": "otag:hate-attacker (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Ahate-attacker+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=released",
+      "query": "otag:hate-attacker (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Ahate-attacker+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "White removal that damages an attacking or blocking creature",
       "code": "CW13"
     },
@@ -56,120 +56,120 @@
       "display": "O-Ring",
       "color": "W",
       "category": "removal",
-      "query": "otag:banish -t:creature (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Abanish+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=released",
+      "query": "otag:banish -t:creature (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Abanish+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "White enchantment that exiles a permanent until it leaves"
     },
     "outnumber": {
       "display": "Outnumber",
       "color": "W",
       "category": "removal",
-      "query": "otag:outnumber (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aoutnumber+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:outnumber (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Aoutnumber+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "White removal that deals damage based on board size"
     },
     "pacifism": {
       "display": "Pacifism",
       "color": "W",
       "category": "removal",
-      "query": "otag:pacifism (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Apacifism+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:pacifism (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Apacifism+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "White aura that prevents a creature from attacking or blocking"
     },
     "vengeance": {
       "display": "Vengeance",
       "color": "W",
       "category": "removal",
-      "query": "otag:hate-tapped (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Ahate-tapped+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=released",
+      "query": "otag:hate-tapped (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Ahate-tapped+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "White removal that targets a tapped creature or gets a cost reduction for one"
     },
     "disenchant": {
       "display": "Disenchant",
       "color": "W",
       "category": "semiremoval",
-      "query": "otag:disenchant-naturalize (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Adisenchant-naturalize+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:disenchant-naturalize (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Adisenchant-naturalize+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "White removal for an artifact or enchantment"
     },
     "charge": {
       "display": "Charge",
       "color": "W",
-      "query": "otag:power-boost-to-all id>=w (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Apower-boost-to-all+id%3E%3Dw+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:power-boost-to-all id>=w (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Apower-boost-to-all+id%3E%3Dw+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "White spell that pumps the board"
     },
     "flicker": {
       "display": "Flicker",
       "color": "W",
-      "query": "otag:flicker (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aflicker+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:flicker (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Aflicker+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Exile a creature, then return it to the battlefield"
     },
     "jumpscare": {
       "display": "Jump Scare",
       "color": "W",
-      "query": "otag:gives-flying id>=w -t:creature r:c (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Agives-flying+id%3E%3Dw+-t%3Acreature+r%3Ac+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:gives-flying id>=w -t:creature r:c (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Agives-flying+id%3E%3Dw+-t%3Acreature+r%3Ac+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "White combat trick that buffs a creature and gives it flying"
     },
     "reclamation": {
       "display": "Reclamation",
       "color": "W",
-      "query": "otag:reanimate-creature otag:low-mana-value-matters (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Areanimate-creature+otag%3Alow-mana-value-matters+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:reanimate-creature otag:low-mana-value-matters (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Areanimate-creature+otag%3Alow-mana-value-matters+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Return a low-cost creature from graveyard to battlefield"
     },
     "shield": {
       "display": "Shield",
       "color": "W",
-      "query": "otag:protects-creature -t:creature id=w (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aprotects-creature+-t%3Acreature+id%3Dw+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:protects-creature -t:creature id=w (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Aprotects-creature+-t%3Acreature+id%3Dw+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "White spell that protects a creature, usually with indestructible"
     },
     "shortsword": {
       "display": "Shortsword",
       "color": "W",
-      "query": "t:equipment id>=w (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=t%3Aequipment+id%3E%3Dw+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "t:equipment id>=w (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=t%3Aequipment+id%3E%3Dw+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "White equipment with a small buff"
     },
     "bigbird": {
       "display": "Big Bird",
       "color": "U",
-      "query": "id=u r:c kw:flying mv>=5 (st:expansion) sort:date",
+      "query": "id=u r:c kw:flying mv>=5 (st:expansion)",
       "url": "https://scryfall.com/search?q=id%3Du+r%3Ac+kw%3Aflying+mv%3E%3D5+%28st%3Aexpansion%29&unique=cards&as=grid&order=released",
       "help": "Blue creature with flying for 4+ mana"
     },
     "bluedork": {
       "display": "Blue Dork",
       "color": "U",
-      "query": "otag:mana-dork id=u (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Amana-dork+id%3Du+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=released",
+      "query": "otag:mana-dork id=u (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Amana-dork+id%3Du+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Blue creature that taps for mana"
     },
     "cancel": {
       "display": "Cancel",
       "color": "U",
       "category": "removal",
-      "query": "otag:counterspell mana>=uu (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Acounterspell+mana%3E%3Duu+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:counterspell mana>=uu (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Acounterspell+mana%3E%3Duu+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Blue counterspell, unconditional. Often has two blue pips."
     },
     "scatter": {
       "display": "Essence Scatter",
       "color": "U",
       "category": "removal",
-      "query": "otag:counterspell-creature (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Acounterspell-creature+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:counterspell-creature (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Acounterspell-creature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Blue counterspell that can counter a creature spell, but not all spells"
     },
     "manaleak": {
       "display": "Mana Leak",
       "color": "U",
       "category": "removal",
-      "query": "aaaaa",
-      "url": "aaaaa",
+      "query": "otag:counterspell-soft (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Acounterspell-soft+%28st%3Aexpansion+r%3Cr%29&order=released&as=grid&unique=cards",
       "help": "Blue counterspell that asks for payment from the opponent"
     },
     "lockdown": {
@@ -177,30 +177,30 @@
       "color": "U",
       "category": "removal",
       "query": "otag:lockdown-creature (st:expansion)",
-      "url": "https://scryfall.com/search?q=otag%3Alockdown-creature+%28st%3Aexpansion%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "url": "https://scryfall.com/search?q=otag%3Alockdown-creature+%28st%3Aexpansion%29&unique=cards&as=grid&order=released",
       "help": "Blue removal that keeps enchanted creature tapped"
     },
     "bounce": {
       "display": "Bounce",
       "color": "U",
       "category": "semiremoval",
-      "query": "otag:removal-bounce -is:permanent (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aremoval-bounce+-is%3Apermanent+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=released"
+      "query": "otag:removal-bounce -is:permanent (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Aremoval-bounce+-is%3Apermanent+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released"
     },
     "negate": {
       "display": "Negate",
       "color": "U",
       "category": "semiremoval",
-      "query": "aaaaa",
-      "url": "aaaaa",
+      "query": "(otag:counterspell-noncreature or otag:counterspell-artifact or otag:counterspell-enchantment) -otag:counterspell-creature (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=%28otag%3Acounterspell-noncreature+or+otag%3Acounterspell-artifact+or+otag%3Acounterspell-enchantment%29+-otag%3Acounterspell-creature+%28st%3Aexpansion+r%3Cr%29&order=released&as=grid&unique=prints",
       "help": "Blue counterspell that can counter only some noncreature spells"
     },
     "tuck": {
       "display": "Tuck",
       "color": "U",
       "category": "semiremoval",
-      "query": "otag:removal-tuck (-is:permanent or kw:channel) id=u (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aremoval-tuck+%28-is%3Apermanent+or+%28s%3Aneo+cn%3A69%29%29+id%3Du+%28st%3Aexpansion+r%3Cr%29+sort%3Adate",
+      "query": "otag:removal-tuck (-is:permanent or kw:channel) id=u (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Aremoval-tuck+%28-is%3Apermanent+or+%28s%3Aneo+cn%3A69%29%29+id%3Du+%28st%3Aexpansion+r%3Cr%29",
       "help": "Blue removal that puts a creature on top (and/or bottom) of library"
     },
     "draw3": {
@@ -216,59 +216,59 @@
     "dig": {
       "display": "Filter",
       "color": "U",
-      "query": "otag:card-advantage (o:look or o:reveal) id=u -t:creature (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Acard-advantage+%28o%3Alook+or+o%3Areveal%29+id%3Du+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:card-advantage (o:look or o:reveal) id=u -t:creature (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Acard-advantage+%28o%3Alook+or+o%3Areveal%29+id%3Du+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Blue spell that draws one card, with selection"
     },
     "wipeout": {
       "display": "Wipeout",
       "color": "U",
-      "url": "https://scryfall.com/search?q=otag%3Amultiple-targets+id%3E%3Du+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "url": "https://scryfall.com/search?q=otag%3Amultiple-targets+id%3E%3Du+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Blue spell that stuns or bounces two or more targets"
     },
     "imp": {
       "display": "Imp",
       "color": "B",
-      "query": "id=b r:c o:flying (st:expansion) sort:date",
-      "url": "https://scryfall.com/search?q=id%3Db+r%3Ac+o%3Aflying+%28st%3Aexpansion%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "id=b r:c o:flying (st:expansion)",
+      "url": "https://scryfall.com/search?q=id%3Db+r%3Ac+o%3Aflying+%28st%3Aexpansion%29&unique=cards&as=grid&order=released",
       "help": "Black flyer with small stats"
     },
     "rats": {
       "display": "Ravenous Rats",
       "color": "B",
-      "query": "id=b t:creature otag:discard (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=id%3Db+t%3Acreature+otag%3Adiscard+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "id=b t:creature otag:discard (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=id%3Db+t%3Acreature+otag%3Adiscard+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Black creature that makes the opponent discard"
     },
     "vamp": {
       "display": "Vamp",
       "color": "B",
-      "query": "id=b r:c o:flying (st:expansion) sort:date",
-      "url": "https://scryfall.com/search?q=id%3Db+r%3Ac+o%3Aflying+%28st%3Aexpansion%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "id=b r:c o:flying (st:expansion)",
+      "url": "https://scryfall.com/search?q=id%3Db+r%3Ac+o%3Aflying+%28st%3Aexpansion%29&unique=cards&as=grid&order=released",
       "help": "Black flyer with medium stats. Often has haste or deals direct damage"
     },
     "splinter": {
       "display": "Bone Splinters",
       "color": "B",
       "category": "removal",
-      "query": "otag:removal otag:additional-cost id>=b (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aremoval+otag%3Aadditional-cost+id%3E%3Db+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:removal otag:additional-cost id>=b (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Aremoval+otag%3Aadditional-cost+id%3E%3Db+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Black removal spell with an additional cost"
     },
     "edict": {
       "display": "Edict",
       "color": "B",
       "category": "removal",
-      "query": "otag:removal-sacrifice otag:removal-creature (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aremoval-sacrifice+otag%3Aremoval-creature+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:removal-sacrifice otag:removal-creature (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Aremoval-sacrifice+otag%3Aremoval-creature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Black removal spell that forces sacrifice"
     },
     "murder": {
       "display": "Murder",
       "color": "B",
       "category": "removal",
-      "query": "otag:removal-destroy id=b (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aremoval-destroy+id%3Db+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:removal-destroy id=b (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Aremoval-destroy+id%3Db+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Black removal spell, no conditions"
     },
     "plague": {
@@ -276,8 +276,8 @@
       "display": "Plague",
       "color": "B",
       "category": "removal",
-      "query": "otag:sweeper otag:removal-toughness (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Asweeper+otag%3Aremoval-toughness+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=released",
+      "query": "otag:sweeper otag:removal-toughness (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Asweeper+otag%3Aremoval-toughness+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Black sweeper that gives a small -N/-N to all creatures"
     },
     "stab": {
@@ -285,46 +285,46 @@
       "display": "Stab",
       "color": "B",
       "category": "removal",
-      "query": "otag:removal-toughness (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aremoval-toughness+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:removal-toughness (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Aremoval-toughness+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Black removal that gives -N/-N"
     },
     "mindrot": {
       "display": "Mind Rot",
       "color": "B",
       "category": "semiremoval",
-      "query": "otag:discard -otag:thoughtseize (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Adiscard+-otag%3Athoughtseize+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:discard -otag:thoughtseize (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Adiscard+-otag%3Athoughtseize+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Black spell that makes opponent discard two or more cards"
     },
     "thoughtseize": {
       "display": "Thoughtseize",
       "color": "B",
       "category": "semiremoval",
-      "query": "otag:thoughtseize -t:creature (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Athoughtseize+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:thoughtseize -t:creature (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Athoughtseize+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Black discard spell that lets you choose"
     },
     "fakedeath": {
       "display": "Fake Death",
       "color": "B",
-      "query": "otag:cheat-death -kw:earthbend -t:creature (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Acheat-death+-kw%3Aearthbend+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:cheat-death -kw:earthbend -t:creature (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Acheat-death+-kw%3Aearthbend+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Black spell that returns a creature to the battlefield when it dies"
     },
     "reanimate": {
       "display": "Reanimate",
       "color": "B",
-      "query": "otag:reanimate-creature (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Areanimate-creature+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:reanimate-creature (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Areanimate-creature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Return creature from graveyard to battlefield"
     },
     "salvage": {
       "code": "CB16",
       "display": "Salvage",
       "color": "B",
-      "query": "otag:regrowth-creature otag:multiple-targets id>=b (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aregrowth-creature+otag%3Amultiple-targets+id%3E%3Db+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:regrowth-creature otag:multiple-targets id>=b (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Aregrowth-creature+otag%3Amultiple-targets+id%3E%3Db+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Black spell that returns two cards from graveyard to hand"
     },
     "signinblood": {
@@ -335,206 +335,206 @@
     "pinger": {
       "display": "Pinger",
       "color": "R",
-      "query": "otag:pinger (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Apinger+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:pinger (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Apinger+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Small red creature with an activated ability that deals 1 or 2 damage"
     },
     "ponger": {
       "display": "Ponger",
       "color": "R",
-      "query": "otag:pinger (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Apinger+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:pinger (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Apinger+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Small red creature with a trigger that deals 1 or 2 damage"
     },
     "reddork": {
       "display": "Red Dork",
       "color": "R",
-      "query": "otag:mana-dork id>=r (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aramp+id%3E%3Dr+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:mana-dork id>=r (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Aramp+id%3E%3Dr+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Blue creature that taps for mana"
     },
     "rummager": {
       "display": "Rummager",
       "color": "R",
-      "query": "otag:repeatable-rummage (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Arepeatable-rummage+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:repeatable-rummage (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Arepeatable-rummage+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Red creature that can repeatedly discard to draw"
     },
     "tunneler": {
       "display": "Tunneler",
       "color": "R",
-      "query": "otag:tunneling (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Atunneling+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:tunneling (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Atunneling+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Red creature that makes a small creature unblockable"
     },
     "axe": {
       "display": "Lava Axe",
       "color": "R",
       "category": "removal",
-      "query": "otag:burn id>=r mv>=4 -t:creature r<r (st:expansion) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aburn+id%3E%3Dr+mv%3E%3D4+-t%3Acreature+r%3Cr+%28st%3Aexpansion%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:burn id>=r mv>=4 -t:creature r<r (st:expansion)",
+      "url": "https://scryfall.com/search?q=otag%3Aburn+id%3E%3Dr+mv%3E%3D4+-t%3Acreature+r%3Cr+%28st%3Aexpansion%29&unique=cards&as=grid&order=released",
       "help": "Red burn spell that's expensive and deals high damage"
     },
     "pyroclasm": {
       "display": "Pyroclasm",
       "color": "R",
       "category": "removal",
-      "query": "otag:burn-creature otag:sweeper (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aburn-creature+otag%3Asweeper+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:burn-creature otag:sweeper (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Aburn-creature+otag%3Asweeper+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Red spell that deals small damage across the board"
     },
     "tweeze": {
       "display": "Burn/Churn",
       "color": "R",
       "category": "removal",
-      "query": "otag:burn otag:card-advantage -t:creature (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aburn+otag%3Acard-advantage+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:burn otag:card-advantage -t:creature (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Aburn+otag%3Acard-advantage+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Red spell that deals damage and also churns through cards"
     },
     "abrade": {
       "display": "Abrade",
       "color": "R",
       "category": "removal",
-      "query": "otag:abrade (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aabrade+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&order=name&as=grid&unique=cards",
+      "query": "otag:abrade (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Aabrade+%28st%3Aexpansion+r%3Cr%29&order=released&as=grid&unique=cards",
       "help": "Red modal spell that deals damage or destroys an artifact"
     },
     "impulse": {
       "display": "Impulse Draw",
       "color": "R",
-      "query": "otag:impulsive-draw (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aimpulsive-draw+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:impulsive-draw (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Aimpulsive-draw+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Red spell that exiles two or more cards from your library to cast soon"
     },
     "surestrike": {
       "display": "Sure Strike",
       "color": "R",
-      "query": "otag:gives-first-strike -t:creature (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Agives-first-strike+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:gives-first-strike -t:creature (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Agives-first-strike+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Red spell that gives target creature first strike at instant speed"
     },
     "threaten": {
       "display": "Threaten",
       "color": "R",
-      "query": "otag:threaten (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Athreaten+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:threaten (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Athreaten+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Red spell that gains control of a creature until end of turn"
     },
     "root": {
       "display": "Thrill",
       "color": "R",
-      "query": "otag:rummage -t:creature (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Arummage+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:rummage -t:creature (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Arummage+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Red spell that discards one, draws two"
     },
     "trumpet": {
       "display": "Trumpet Blast",
       "color": "R",
-      "query": "otag:power-boost-to-all -t:creature id>=r (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Apower-boost-to-all+-t%3Acreature+id%3E%3Dr+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:power-boost-to-all -t:creature id>=r (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Apower-boost-to-all+-t%3Acreature+id%3E%3Dr+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Red spell that pumps the board"
     },
     "dreadmaw": {
       "display": "Dreadmaw",
       "color": "G",
-      "query": "mv>=6 id>=g -is:hybrid t:creature (st:expansion r:c) sort:date",
-      "url": "https://scryfall.com/search?q=mv%3E%3D6+id%3E%3Dg+-is%3Ahybrid+t%3Acreature+%28st%3Aexpansion+r%3Ac%29+sort%3Adate&unique=cards&as=grid&order=released",
+      "query": "mv>=6 id>=g -is:hybrid t:creature (st:expansion r:c)",
+      "url": "https://scryfall.com/search?q=mv%3E%3D6+id%3E%3Dg+-is%3Ahybrid+t%3Acreature+%28st%3Aexpansion+r%3Ac%29&unique=cards&as=grid&order=released",
       "help": "6 mana common green creature"
     },
     "manadork": {
       "display": "Mana Dork",
       "color": "G",
-      "query": "otag:mana-dork (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Amana-dork+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=released",
+      "query": "otag:mana-dork (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Amana-dork+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Creature that taps for mana"
     },
     "manafork": {
       "display": "Multimana Dork",
       "color": "G",
-      "query": "otag:mana-dork (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Amana-dork+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=released",
+      "query": "otag:mana-dork (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Amana-dork+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Creature that taps for 2+ mana"
     },
     "wurm": {
       "display": "Wurm",
       "color": "G",
-      "query": "id=g mv>=7 (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=id%3Dg+mv%3E%3D7+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "id=g mv>=7 (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=id%3Dg+mv%3E%3D7+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Big green creature,"
     },
     "brokenwings": {
       "display": "Broken Wings",
       "color": "G",
       "category": "removal",
-      "query": "otag:hate-flying (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Ahate-flying+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:hate-flying (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Ahate-flying+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Green modal removal for flyers, artifacts, enchantments, and/or graveyard"
     },
     "bite": {
       "display": "Bite Spell",
       "color": "G",
       "category": "removal",
-      "query": "otag:one-sided-fight (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aone-sided-fight+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:one-sided-fight (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Aone-sided-fight+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Green removal that causes a one-sided fight"
     },
     "flyinghate": {
       "display": "Flying Hate",
       "color": "G",
       "category": "removal",
-      "query": "otag:removal-flying (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Ahate-flying+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:removal-flying (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Ahate-flying+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Green flyer removal"
     },
     "fight": {
       "display": "Fight Spell",
       "color": "G",
       "category": "removal",
-      "query": "kw:fight (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=kw%3Afight+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "kw:fight (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=kw%3Afight+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Green removal that causes a fight"
     },
     "naturalize": {
       "display": "Naturalize",
       "color": "G",
       "category": "semiremoval",
-      "query": "otag:disenchant-naturalize (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Adisenchant-naturalize+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:disenchant-naturalize (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Adisenchant-naturalize+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Green removal for an artifact or enchantment"
     },
     "mulch": {
       "display": "Mulch",
       "color": "G",
-      "query": "id=g otag:impulse -t:creature (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=id%3Dg+otag%3Aimpulse+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=released",
+      "query": "id=g otag:impulse -t:creature (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=id%3Dg+otag%3Aimpulse+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Green spell that draws one card with selection"
     },
     "ramp": {
       "display": "Ramp",
       "color": "G",
-      "query": "otag:ramp (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aramp+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:ramp (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Aramp+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Green spell that puts a land or equivalent onto the battlefield"
     },
     "multiramp": {
       "display": "Multi Ramp",
       "color": "G",
-      "query": "otag:ramp (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aramp+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:ramp (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Aramp+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Green spell that puts two or more lands or equivalent onto the battlefield"
     },
     "regrowth": {
       "display": "Regrowth",
       "color": "G",
-      "query": "otag:regrowth -t:creature id>=g (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aregrowth+-t%3Acreature+id%3E%3Dg+%28st%3Aexpansion+r%3Cr%29+sort%date&unique=cards&as=grid&order=name",
+      "query": "otag:regrowth -t:creature id>=g (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Aregrowth+-t%3Acreature+id%3E%3Dg+%28st%3Aexpansion+r%3Cr%29+sort%date&unique=cards&as=grid&order=released",
       "help": "Green spell that returns a card from graveyard to hand"
     },
     "cryptkeeper": {
       "display": "Cryptkeeper",
       "color": "A",
-      "query": "otag:hate-graveyard id=c t:creature (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Ahate-graveyard+id%3Dc+t%3Acreature+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:hate-graveyard id=c t:creature (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Ahate-graveyard+id%3Dc+t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Artifact creature that removes cards from a graveyard"
     },
     "myr": {
@@ -547,23 +547,23 @@
     "pilgrim": {
       "display": "Pilgrim's Eye",
       "color": "A",
-      "query": "otag:tutor-land -t:land id=c (st:expansion r<r is:booster) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Atutor-land+-t%3Aland+id%3Dc+%28st%3Aexpansion+r%3Cr+is%3Abooster%29+sort%3Adate&unique=prints&as=grid&order=name",
+      "query": "otag:tutor-land -t:land id=c (st:expansion r<r is:booster)",
+      "url": "https://scryfall.com/search?q=otag%3Atutor-land+-t%3Aland+id%3Dc+%28st%3Aexpansion+r%3Cr+is%3Abooster%29&unique=prints&as=grid&order=released",
       "help": "Artifact or colorless spell that tutors for a land"
     },
     "boombox": {
       "display": "Boom Box",
       "color": "A",
       "category": "removal",
-      "query": "otag:removal id=c (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aremoval+id%3Dc+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:removal id=c (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Aremoval+id%3Dc+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Artifact or colorless spell that can expensively remove a creature"
     },
     "fetchland": {
       "display": "Fetchland",
       "color": "A",
-      "query": "otag:tutor-land t:land id=c (st:expansion r<r is:booster) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Atutor-land+t%3Aland+id%3Dc+%28st%3Aexpansion+r%3Cr+is%3Abooster%29+sort%3Adate&unique=prints&as=grid&order=name",
+      "query": "otag:tutor-land t:land id=c (st:expansion r<r is:booster)",
+      "url": "https://scryfall.com/search?q=otag%3Atutor-land+t%3Aland+id%3Dc+%28st%3Aexpansion+r%3Cr+is%3Abooster%29&unique=prints&as=grid&order=released",
       "help": "Land that sacrifices to tutor for another land"
     },
     "manarock": {
@@ -576,38 +576,38 @@
     "cantripper": {
       "display": "Cantrip Vanilla",
       "color": "X",
-      "query": "otag:pure-draw otag:flavors-of-vanilla (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Apure-draw+otag%3Aflavors-of-vanilla+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:pure-draw otag:flavors-of-vanilla (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Apure-draw+otag%3Aflavors-of-vanilla+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Creature whose main feature is replacing itself"
     },
     "recover": {
       "display": "Recoverer",
       "color": "X",
-      "query": "otag:regrowth-self (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aregrowth-self+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:regrowth-self (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Aregrowth-self+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Creature that returns itself from graveyard to hand"
     },
     "brontodon": {
       "display": "Brontodon",
       "color": "X",
       "category": "semiremoval",
-      "query": "otag:disenchant-naturalize otag:martyr (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Adisenchant-naturalize+otag%3Amartyr+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:disenchant-naturalize otag:martyr (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Adisenchant-naturalize+otag%3Amartyr+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Creature that sacrifices to destroy an artifact or enchantment"
     },
     "swap": {
       "display": "Pathlike",
       "color": "X",
       "category": "removal",
-      "query": "otag:swap-removal (st:expansion) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aswap-removal+%28st%3Aexpansion%29+sort%3Adate&unique=cards&as=grid&order=released",
+      "query": "otag:swap-removal (st:expansion)",
+      "url": "https://scryfall.com/search?q=otag%3Aswap-removal+%28st%3Aexpansion%29&unique=cards&as=grid&order=released",
       "help": "Spell that removes a creature but gives a resource to its controller"
     },
     "overrun": {
       "display": "Overrun",
       "color": "X",
-      "query": "otag:overrun (st:expansion r<r) sort:date",
-      "url": "https://scryfall.com/search?q=otag%3Aoverrun+%28st%3Aexpansion+r%3Cr%29+sort%3Adate&unique=cards&as=grid&order=name",
+      "query": "otag:overrun (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Aoverrun+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Spell that punmps the board and gives trample"
     }
   },
