@@ -983,7 +983,7 @@
       "display": "Semi First Strike",
       "color": "X",
       "category": "body",
-      "url": "https://scryfall.com/search?q=t%3Acreature+o%3A%22first+strike%22+r%3Cr+%28st%3Aexpansion%29&unique=cards&as=grid&order=released"
+      "url": "https://scryfall.com/search?q=t%3Acreature+o%3A%22first+strike%22+r%3Cr+%28st%3Aexpansion%29&unique=cards&as=grid&order=released",
       "help": ""
     },
     "swap": {
