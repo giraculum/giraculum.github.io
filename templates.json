@@ -3,6 +3,7 @@
     "banisher": {
       "display": "Banisher",
       "color": "W",
+      "category": "removalbody",
       "query": "otag:banish t:creature (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Abanish+t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "White creature that exiles a permanent until it leaves"
@@ -13,11 +14,12 @@
       "category": "removalbody",
       "query": "otag:tapper o:{T} is:permanent (st:expansion r<r) sort:date",
       "url": "https://scryfall.com/search?q=otag%3Atapper+o%3A%7BT%7D+is%3Apermanent+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
-      "help": "Creature that taps to tap an opponent's creature",
+      "help": "Creature that taps to tap an opponent's creature"
     },
     "marshal": {
       "display": "Marshal",
       "color": "W",
+      "category": "body",
       "query": "otag:activated-ability otag:power-boost-to-all id>=w (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aactivated-ability+otag%3Apower-boost-to-all+id%3E%3Dw+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "White creature with an activated ability to pump the board"
@@ -25,6 +27,7 @@
     "pridemate": {
       "display": "Pridemate",
       "color": "W",
+      "category": "body",
       "query": "otag:repeatable-pp-counters id>=w (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Arepeatable-pp-counters+id%3E%3Dw+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "White creature that grows over time"
@@ -32,6 +35,7 @@
     "angel": {
       "display": "Serra Angel",
       "color": "W",
+      "category": "body",
       "query": "kw:flying t:creature id=w (st:expansion r:u)",
       "url": "https://scryfall.com/search?q=kw%3Aflying+t%3Acreature+id%3Dw+%28st%3Aexpansion+r%3Au%29&unique=cards&as=grid&order=released",
       "help": "White uncommon with large stats and flying"
@@ -39,6 +43,7 @@
     "tokens": {
       "display": "Reinforcements",
       "color": "W",
+      "category": "body",
       "query": "otag:multiple-bodies id>=w -t:creature (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Amultiple-bodies+id%3E%3Dw+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29&order=released&as=grid&unique=prints",
       "help": "White spell that creatures two or more tokens"
@@ -46,8 +51,8 @@
     "wctop": {
       "display": "Common Topper",
       "color": "W",
-      "url": "https://scryfall.com/search?q=id%3E%3Dw+mv%3E%3D5+r%3Ac+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "query": "id>=w mv>=5 r:c (st:expansion r<r) sort:date",
+      "url": "https://scryfall.com/search?q=id%3E%3Dw+mv%3E%3D5+r%3Ac+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "White common creature at 5+ mana. Landcyclers usually fit here"
     },
     "giantkiller": {
@@ -62,10 +67,10 @@
       "display": "Joust",
       "color": "W",
       "category": "removal",
+      "code": "CW13",
       "query": "otag:hate-attacker (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Ahate-attacker+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
-      "help": "White removal that damages an attacking or blocking creature",
-      "code": "CW13"
+      "help": "White removal that damages an attacking or blocking creature"
     },
     "o-ring": {
       "display": "O-Ring",
@@ -124,6 +129,7 @@
     "jumpscare": {
       "display": "Jump Scare",
       "color": "W",
+      "category": "trick",
       "query": "otag:gives-flying id>=w -t:creature r:c (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Agives-flying+id%3E%3Dw+-t%3Acreature+r%3Ac+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "White combat trick that buffs a creature and gives it flying"
@@ -138,6 +144,7 @@
     "shield": {
       "display": "Shield",
       "color": "W",
+      "category": "trick",
       "query": "otag:protects-creature -t:creature id=w (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aprotects-creature+-t%3Acreature+id%3Dw+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "White spell that protects a creature, usually with indestructible"
@@ -153,6 +160,7 @@
       "display": "Support",
       "color": "W",
       "url": "https://scryfall.com/search?as=grid&order=released&q=otag%3Agives-pp-counters+-otag%3Arepeatable-pp-counters+id%3E%3Dw+%28st%3Aexpansion+r%3Cr%29&unique=cards",
+      "help": ""
     },
 
 
@@ -161,6 +169,7 @@
     "bigbird": {
       "display": "Big Bird",
       "color": "U",
+      "category": "body",
       "query": "id=u r:c kw:flying mv>=5 (st:expansion)",
       "url": "https://scryfall.com/search?q=id%3Du+r%3Ac+kw%3Aflying+mv%3E%3D5+%28st%3Aexpansion%29&unique=cards&as=grid&order=released",
       "help": "Blue creature with flying for 4+ mana"
@@ -168,6 +177,7 @@
     "bluedork": {
       "display": "Blue Dork",
       "color": "U",
+      "category": "body",
       "query": "otag:mana-dork id=u (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Amana-dork+id%3Du+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Blue creature that taps for mana"
@@ -178,7 +188,7 @@
       "category": "body",
       "query": "t:creature otag:repeatable-loot (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=t%3Acreature+otag%3Arepeatable-loot+%28st%3Aexpansion+r%3Cr%29&order=released&as=grid&unique=cards",
-      "help": "Creature that taps "
+      "help": "Creature that taps to loot"
     },
     "serpent": {
       "display": "Serpent",
@@ -254,7 +264,8 @@
       "color": "U",
       "category": "semiremoval",
       "query": "otag:removal-bounce -is:permanent (st:expansion r<r)",
-      "url": "https://scryfall.com/search?q=otag%3Aremoval-bounce+-is%3Apermanent+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released"
+      "url": "https://scryfall.com/search?q=otag%3Aremoval-bounce+-is%3Apermanent+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
+      "help": "Blue spell that returns a permanent to its owner's hand"
     },
     "negate": {
       "display": "Negate",
@@ -277,6 +288,7 @@
     "draw2": {
       "display": "Divination",
       "color": "U",
+      "category": "resource",
       "query": "otag:pure-draw -kw:cycling -otag:cantrip id>=u -t:creature (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Apure-draw+-kw%3Acycling+-otag%3Acantrip+id%3E%3Du+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Blue spell that draws two cards"
@@ -292,6 +304,7 @@
     "draw3": {
       "display": "Ancestral",
       "color": "U",
+      "category": "resource",
       "query": "otag:pure-draw -kw:cycling -otag:cantrip id>=u -t:creature (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Apure-draw+-kw%3Acycling+-otag%3Acantrip+id%3E%3Du+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Blue spell that draws three cards"
@@ -307,6 +320,7 @@
     "dig": {
       "display": "Filter",
       "color": "U",
+      "category": "resource",
       "query": "otag:card-advantage (o:look or o:reveal) id=u -t:creature (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Acard-advantage+%28o%3Alook+or+o%3Areveal%29+id%3Du+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Blue spell that draws one card, with selection"
@@ -327,7 +341,7 @@
       "category": "removalbody",
       "query": "otag:spot-removal t:creature id=b (st:expansion r<r) sort:date",
       "url": "https://scryfall.com/search?q=otag%3Aspot-removal+t%3Acreature+id%3Db+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
-      "help": "Black creature that doubles as removal",
+      "help": "Black creature that doubles as removal"
     },
     "gravedigger": {
       "display": "Gravedigger",
@@ -340,6 +354,7 @@
     "imp": {
       "display": "Imp",
       "color": "B",
+      "category": "body",
       "query": "id=b r:c o:flying (st:expansion)",
       "url": "https://scryfall.com/search?q=id%3Db+r%3Ac+o%3Aflying+%28st%3Aexpansion%29&unique=cards&as=grid&order=released",
       "help": "Black flyer with small stats"
@@ -347,6 +362,7 @@
     "rats": {
       "display": "Ravenous Rats",
       "color": "B",
+      "category": "body",
       "query": "id=b t:creature otag:discard (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=id%3Db+t%3Acreature+otag%3Adiscard+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Black creature that makes the opponent discard"
@@ -369,6 +385,7 @@
     "vamp": {
       "display": "Vampire",
       "color": "B",
+      "category": "body",
       "query": "id=b r:c o:flying (st:expansion)",
       "url": "https://scryfall.com/search?q=id%3Db+r%3Ac+o%3Aflying+%28st%3Aexpansion%29&unique=cards&as=grid&order=released",
       "help": "Black flyer with medium stats. Often has haste or deals direct damage"
@@ -396,7 +413,7 @@
       "category": "removal",
       "query": "otag:spot-removal o:'or less' id=b (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aspot-removal+o%3A%27or+less%27+id%3Db+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
-      "help": "Black spell that removes a small creature",
+      "help": "Black spell that removes a small creature"
     },
     "contempt": {
       "display": "Contempt",
@@ -461,6 +478,7 @@
     "fakedeath": {
       "display": "Fake Death",
       "color": "B",
+      "category": "trick",
       "query": "otag:cheat-death -kw:earthbend -t:creature (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Acheat-death+-kw%3Aearthbend+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Black spell that returns a creature to the battlefield when it dies"
@@ -473,9 +491,10 @@
       "help": "Return creature from graveyard to battlefield"
     },
     "salvage": {
-      "code": "CB16",
       "display": "Salvage",
       "color": "B",
+      "category": "resource",
+      "code": "CB16",
       "query": "otag:regrowth-creature otag:multiple-targets id>=b (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aregrowth-creature+otag%3Amultiple-targets+id%3E%3Db+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Black spell that returns two cards from graveyard to hand"
@@ -504,16 +523,19 @@
       "color": "R",
       "category": "body",
       "url": "https://scryfall.com/search?q=r%3Ac+mv%3E%3D5+t%3Acreature+id%3Dr+%28st%3Aexpansion%29&order=released",
+      "help": "Large red creature at common, defensive"
     },
     "opportunist": {
       "display": "Opportunist",
       "color": "R",
       "category": "body",
-      "url": "https://scryfall.com/search?q=otag%3Aimpulsive-draw+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released"
+      "url": "https://scryfall.com/search?q=otag%3Aimpulsive-draw+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
+      "help": ""
     },
     "pinger": {
       "display": "Pinger",
       "color": "R",
+      "category": "body",
       "query": "otag:pinger (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Apinger+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Small red creature with an activated ability that deals 1 or 2 damage"
@@ -521,6 +543,7 @@
     "ponger": {
       "display": "Ponger",
       "color": "R",
+      "category": "body",
       "query": "otag:pinger (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Apinger+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Small red creature with a trigger that deals 1 or 2 damage"
@@ -528,6 +551,7 @@
     "reddork": {
       "display": "Red Dork",
       "color": "R",
+      "category": "body",
       "query": "otag:mana-dork id>=r (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aramp+id%3E%3Dr+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Blue creature that taps for mana"
@@ -535,6 +559,7 @@
     "rummager": {
       "display": "Rummager",
       "color": "R",
+      "category": "body",
       "query": "otag:repeatable-rummage (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Arepeatable-rummage+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Red creature that can repeatedly discard to draw"
@@ -544,10 +569,12 @@
       "color": "R",
       "category": "body",
       "url": "https://scryfall.com/search?q=%28otag%3Asynergy-noncreature+or+otag%3Asynergy-sorcery%29+id%3E%3Dr+r%3Ac+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
+      "help": "Red creature that grows from noncreature spells"
     },
     "tunneler": {
       "display": "Tunneler",
       "color": "R",
+      "category": "body",
       "query": "otag:tunneling (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Atunneling+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Red creature that makes a small creature unblockable"
@@ -616,7 +643,7 @@
     "abrade": {
       "display": "Abrade",
       "color": "R",
-      "category": "removal",
+      "category": "semiremoval",
       "query": "otag:abrade (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aabrade+%28st%3Aexpansion+r%3Cr%29&order=released&as=grid&unique=cards",
       "help": "Red modal spell that deals damage or destroys an artifact"
@@ -626,6 +653,7 @@
     "impulse": {
       "display": "Impulse Draw",
       "color": "R",
+      "category": "resource",
       "query": "otag:impulsive-draw (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aimpulsive-draw+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Red spell that exiles two or more cards from your library to cast soon"
@@ -633,6 +661,7 @@
     "surestrike": {
       "display": "Sure Strike",
       "color": "R",
+      "category": "trick",
       "query": "otag:gives-first-strike -t:creature (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Agives-first-strike+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Red spell that gives target creature first strike at instant speed"
@@ -640,6 +669,7 @@
     "threaten": {
       "display": "Threaten",
       "color": "R",
+      "category": "trick",
       "query": "otag:threaten (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Athreaten+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Red spell that gains control of a creature until end of turn"
@@ -647,6 +677,7 @@
     "root": {
       "display": "Thrill",
       "color": "R",
+      "category": "resource",
       "query": "otag:rummage -t:creature (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Arummage+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Red spell that discards one, draws two"
@@ -654,6 +685,7 @@
     "trumpet": {
       "display": "Trumpet Blast",
       "color": "R",
+      "category": "trick",
       "query": "otag:power-boost-to-all -t:creature id>=r (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Apower-boost-to-all+-t%3Acreature+id%3E%3Dr+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Red spell that pumps the board"
@@ -665,6 +697,7 @@
     "dreadmaw": {
       "display": "Dreadmaw",
       "color": "G",
+      "category": "body",
       "query": "mv>=6 id>=g -is:hybrid t:creature (st:expansion r:c)",
       "url": "https://scryfall.com/search?q=mv%3E%3D6+id%3E%3Dg+-is%3Ahybrid+t%3Acreature+%28st%3Aexpansion+r%3Ac%29&unique=cards&as=grid&order=released",
       "help": "6 mana common green creature"
@@ -672,6 +705,7 @@
     "manadork": {
       "display": "Mana Dork",
       "color": "G",
+      "category": "body",
       "query": "otag:mana-dork (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Amana-dork+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Creature that taps for mana"
@@ -679,6 +713,7 @@
     "manafork": {
       "display": "Multimana Dork",
       "color": "G",
+      "category": "body",
       "query": "otag:mana-dork (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Amana-dork+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Creature that taps for 2+ mana"
@@ -694,9 +729,10 @@
     "wurm": {
       "display": "Wurm",
       "color": "G",
+      "category": "body",
       "query": "id=g mv>=7 (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=id%3Dg+mv%3E%3D7+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
-      "help": "Big green creature,"
+      "help": "Big green creature"
     },
     "gctop": {
       "display": "Common Topper",
@@ -753,11 +789,13 @@
       "display": "Giant Growth",
       "color": "G",
       "category": "trick",
-      "url": "https://scryfall.com/search?q=otag%3Aimpulsive-draw+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released"
+      "url": "https://scryfall.com/search?q=otag%3Aimpulsive-draw+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
+      "help": ""
     },
     "mulch": {
       "display": "Mulch",
       "color": "G",
+      "category": "resource",
       "query": "id=g otag:impulse -t:creature (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=id%3Dg+otag%3Aimpulse+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Green spell that draws one card with selection"
@@ -765,6 +803,7 @@
     "ramp": {
       "display": "Ramp",
       "color": "G",
+      "category": "resource",
       "query": "otag:ramp (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aramp+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Green spell that puts a land or equivalent onto the battlefield"
@@ -772,6 +811,7 @@
     "multiramp": {
       "display": "Multi Ramp",
       "color": "G",
+      "category": "resource",
       "query": "otag:ramp (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aramp+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Green spell that puts two or more lands or equivalent onto the battlefield"
@@ -779,6 +819,7 @@
     "regrowth": {
       "display": "Regrowth",
       "color": "G",
+      "category": "resource",
       "query": "otag:regrowth -t:creature id>=g (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aregrowth+-t%3Acreature+id%3E%3Dg+%28st%3Aexpansion+r%3Cr%29+sort%date&unique=cards&as=grid&order=released",
       "help": "Green spell that returns a card from graveyard to hand"
@@ -787,8 +828,8 @@
       "display": "Snakeskin",
       "color": "G",
       "category": "trick",
-      "url": "https://scryfall.com/search?q=otag%3Agives-hexproof+%28id%3E%3Dg+or+id%3E%3Du%29+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "query": "otag:gives-hexproof (id>=g or id>=u) (st:expansion r<r) sort:date",
+      "url": "https://scryfall.com/search?q=otag%3Agives-hexproof+%28id%3E%3Dg+or+id%3E%3Du%29+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Instant-speed spell that grants hexproof"
     },
 
@@ -798,6 +839,7 @@
     "cryptkeeper": {
       "display": "Cryptkeeper",
       "color": "C",
+      "category": "body",
       "query": "otag:hate-graveyard id=c t:creature (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Ahate-graveyard+id%3Dc+t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Artifact creature that removes cards from a graveyard"
@@ -805,6 +847,7 @@
     "myr": {
       "display": "Myr",
       "color": "C",
+      "category": "body",
       "query": "otag:mana-rock (st:expansion r<r) date:year",
       "url": "https://scryfall.com/search?q=otag%3Amana-rock+%28st%3Aexpansion+r%3Cr%29+date%3Ayear&unique=cards&as=grid&order=released",
       "help": "Artifact creature that taps for mana"
@@ -815,6 +858,7 @@
       "color": "C",
       "category": "body",
       "url": "https://scryfall.com/search?q=id%3Dc+o%3Aflying+%28st%3Aexpansion+r%3CR%29&unique=cards&as=grid&order=released",
+      "help": ""
     },
     "pilgrim": {
       "display": "Surveyor",
@@ -836,17 +880,19 @@
       "color": "C",
       "category": "resource",
       "url": "https://scryfall.com/search?q=o%3A%22land+card%22+-t%3Aland+id%3Dc+%28st%3Aexpansion+r%3Cr+is%3Abooster%29&unique=prints&as=grid&order=released",
+      "help": ""
     },
     "fetchland": {
       "display": "Fetchland",
       "color": "C",
+      "category": "resource",
       "query": "otag:tutor-land t:land id=c (st:expansion r<r is:booster)",
       "url": "https://scryfall.com/search?q=otag%3Atutor-land+t%3Aland+id%3Dc+%28st%3Aexpansion+r%3Cr+is%3Abooster%29&unique=prints&as=grid&order=released",
       "help": "Land that sacrifices to tutor for another land"
     },
     "kite": {
       "display": "Kite/Wings",
-      "color": "A",
+      "color": "C",
       "url": "https://scryfall.com/search?q=otag%3Agives-flying+is%3Apermanent+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "query": "otag:gives-flying is:permanent -t:creature (st:expansion r<r) sort:date",
       "help": "Equipment or Aura that gives flying"
@@ -865,6 +911,7 @@
     "cantripper": {
       "display": "Cantrip Vanilla",
       "color": "X",
+      "category": "body",
       "query": "otag:pure-draw otag:flavors-of-vanilla (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Apure-draw+otag%3Aflavors-of-vanilla+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Creature whose main feature is replacing itself"
@@ -872,6 +919,7 @@
     "recover": {
       "display": "Recoverer",
       "color": "X",
+      "category": "body",
       "query": "otag:regrowth-self (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aregrowth-self+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Creature that returns itself from graveyard to hand"
@@ -879,6 +927,7 @@
     "invoker": {
       "display": "Invoker",
       "color": "X",
+      "category": "body",
       "query": "otag:mana-sink (st:expansion r<r) sort:date",
       "url": "https://scryfall.com/search?q=otag%3Amana-sink+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Permanent with a big mana sink to potentially close out the game"
@@ -913,7 +962,7 @@
       "category": "body",
       "query": "o:enters o:create o:flying t:creature (st:expansion) date>2021",
       "url": "https://scryfall.com/search?q=o%3Aenters+o%3Acreate+o%3Aflying+t%3Acreature+%28st%3Aexpansion%29+date%3E2021&unique=cards&as=grid&order=artist",
-      "help": "Creature that creates a flying token on enter",
+      "help": "Creature that creates a flying token on enter"
     },
     "tome": {
       "display": "Tome",
@@ -926,13 +975,16 @@
     "pawnshop": {
       "display": "Pawnshop",
       "color": "X",
+      "category": "resource",
       "url": "https://scryfall.com/search?q=otag%3Arepeatable-sacrifice-outlet+otag%3Arepeatable-draw+%28st%3Aexpansion+r%3Cr%29+&unique=cards&as=grid&order=released",
+      "help": ""
     },
     "halfstrike": {
       "display": "Semi First Strike",
       "color": "X",
       "category": "body",
-      "url": "https://scryfall.com/search?q=t%3Acreature+o%3A%22first+strike%22+r%3Cr+%28st%3Aexpansion%29&unique=cards&as=grid&order=released",
+      "url": "https://scryfall.com/search?q=t%3Acreature+o%3A%22first+strike%22+r%3Cr+%28st%3Aexpansion%29&unique=cards&as=grid&order=released"
+      "help": ""
     },
     "swap": {
       "display": "Pathlike",
@@ -945,6 +997,7 @@
     "overrun": {
       "display": "Overrun",
       "color": "X",
+      "category": "trick",
       "query": "otag:overrun (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aoverrun+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Spell that punmps the board and gives trample"
