@@ -206,11 +206,15 @@
     "draw3": {
       "display": "Ancestral",
       "color": "U",
+      "query": "otag:pure-draw -kw:cycling -otag:cantrip id>=u -t:creature (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Apure-draw+-kw%3Acycling+-otag%3Acantrip+id%3E%3Du+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Blue spell that draws three cards"
     },
     "draw2": {
       "display": "Divination",
       "color": "U",
+      "query": "otag:pure-draw -kw:cycling -otag:cantrip id>=u -t:creature (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Apure-draw+-kw%3Acycling+-otag%3Acantrip+id%3E%3Du+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Blue spell that draws two cards"
     },
     "dig": {
@@ -330,7 +334,10 @@
     "signinblood": {
       "display": "Sign in Blood",
       "color": "B",
-      "help": "Black spell that draws two cards for an extra cost"
+      "category": "resource",
+      "query": "otag:pure-draw otag:life-for-cards id>=b -t:creature (st:expansion r<r) sort:date",
+      "url": "https://scryfall.com/search?q=otag%3Apure-draw+otag%3Alife-for-cards+id%3E%3Db+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
+      "help": "Black spell that draws two cards",
     },
     "pinger": {
       "display": "Pinger",
