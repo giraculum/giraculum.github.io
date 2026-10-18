@@ -12,7 +12,7 @@
       "display": "Jailer",
       "color": "W",
       "category": "removalbody",
-      "query": "otag:tapper o:{T} is:permanent (st:expansion r<r) sort:date",
+      "query": "otag:tapper o:{T} is:permanent (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Atapper+o%3A%7BT%7D+is%3Apermanent+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Creature that taps to tap an opponent's creature"
     },
@@ -51,7 +51,8 @@
     "wctop": {
       "display": "Common Topper",
       "color": "W",
-      "query": "id>=w mv>=5 r:c (st:expansion r<r) sort:date",
+      "category": "misc",
+      "query": "id>=w mv>=5 r:c (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=id%3E%3Dw+mv%3E%3D5+r%3Ac+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "White common creature at 5+ mana. Landcyclers usually fit here"
     },
@@ -115,6 +116,7 @@
     "charge": {
       "display": "Charge",
       "color": "W",
+      "category": "combat",
       "query": "otag:power-boost-to-all id>=w (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Apower-boost-to-all+id%3E%3Dw+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "White spell that pumps the board"
@@ -122,6 +124,7 @@
     "flicker": {
       "display": "Flicker",
       "color": "W",
+      "category": "trick",
       "query": "otag:flicker (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aflicker+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Exile a creature, then return it to the battlefield"
@@ -137,6 +140,7 @@
     "reclamation": {
       "display": "Reclamation",
       "color": "W",
+      "category": "resource",
       "query": "otag:reanimate-creature otag:low-mana-value-matters (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Areanimate-creature+otag%3Alow-mana-value-matters+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Return a low-cost creature from graveyard to battlefield"
@@ -152,15 +156,18 @@
     "shortsword": {
       "display": "Shortsword",
       "color": "W",
+      "category": "combat",
       "query": "t:equipment id>=w (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=t%3Aequipment+id%3E%3Dw+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "White equipment with a small buff"
     },
     "support": {
-      "display": "Support",
+      "display": "Supporter",
       "color": "W",
+      "category": "body",
+      "query": "otag:gives-pp-counters -otag:repeatable-pp-counters id>=w (st:expansion r<r)",
       "url": "https://scryfall.com/search?as=grid&order=released&q=otag%3Agives-pp-counters+-otag%3Arepeatable-pp-counters+id%3E%3Dw+%28st%3Aexpansion+r%3Cr%29&unique=cards",
-      "help": ""
+      "help": "Creature that shares +1/+1 counters when it enters"
     },
 
 
@@ -194,35 +201,40 @@
       "display": "Serpent",
       "color": "U",
       "category": "body",
+      "query": "otag:unblockable (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aunblockable+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
-      "query": "otag:unblockable (st:expansion r<r) sort:date",
       "help": "Large blue creature that can't be blocked"
     },
     "stalker": {
       "display": "Stalker",
       "color": "U",
       "category": "body",
+      "query": "otag:unblockable (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aunblockable+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
-      "query": "otag:unblockable (st:expansion r<r) sort:date",
       "help": "Small blue creature that can't be blocked"
     },
     "stunner": {
       "display": "Stunner",
       "color": "U",
       "category": "body",
-      "url": "https://scryfall.com/search?q=otag%3Atapper-creature+t%3Acreature+st%3Aexpansion+r%3Cr+o%3Astun&unique=cards&as=grid&order=released"
+      "query": "o:'stun counter' t:creature (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Atapper-creature+t%3Acreature+st%3Aexpansion+r%3Cr+o%3Astun&unique=cards&as=grid&order=released",
+      "help": "Creature that taps and stuns another creature"
     },
     "twiddler": {
       "display": "Twiddler",
       "color": "U",
       "category": "body",
-      "url": "https://scryfall.com/search?q=otag%3Atapper+-o%3A%7BT%7D+is%3Apermanent+%28st%3Aexpansion+r%3Cr%29+o%3Aflash&unique=cards&as=grid&order=released"
+      "query": "o:tap o:untap t:creature (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Atapper+-o%3A%7BT%7D+is%3Apermanent+%28st%3Aexpansion+r%3Cr%29+o%3Aflash&unique=cards&as=grid&order=released",
+      "help": "Creature that can tap or untap other permanents"
     },
     "uctop": {
       "display": "Common Topper",
       "color": "U",
-      "url": "https://scryfall.com/search?q=id%3E%3Du+mv%3E%3D5+r%3Ac+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
+      "category": "misc",
       "query": "id>=u mv>=5 r:c (st:expansion r<r) sort:date",
+      "url": "https://scryfall.com/search?q=id%3E%3Du+mv%3E%3D5+r%3Ac+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Blue common creature at 5+ mana. Landcyclers usually fit here"
     },
     
@@ -255,7 +267,7 @@
       "display": "Lockdown",
       "color": "U",
       "category": "removal",
-      "query": "otag:lockdown-creature (st:expansion)",
+      "query": "otag:lockdown-creature (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Alockdown-creature+%28st%3Aexpansion%29&unique=cards&as=grid&order=released",
       "help": "Blue removal that keeps enchanted creature tapped"
     },
@@ -297,7 +309,7 @@
       "display": "Think Twice",
       "color": "U",
       "category": "resource",
-      "query": "otag:card-advantage otag:castable-from-graveyard (st:expansion r<r) sort:date",
+      "query": "otag:card-advantage otag:castable-from-graveyard (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Acard-advantage+otag%3Acastable-from-graveyard+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Draw spell in two installments"
     },
@@ -313,8 +325,8 @@
       "display": "Snakeskin",
       "color": "U",
       "category": "trick",
-      "url": "https://scryfall.com/search?q=otag%3Agives-hexproof+%28id%3E%3Dg+or+id%3E%3Du%29+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "query": "otag:gives-hexproof (id>=g or id>=u) (st:expansion r<r) sort:date",
+      "url": "https://scryfall.com/search?q=otag%3Agives-hexproof+%28id%3E%3Dg+or+id%3E%3Du%29+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Instant-speed spell that grants hexproof"
     },
     "dig": {
@@ -328,18 +340,18 @@
     "wipeout": {
       "display": "Wipeout",
       "color": "U",
-      "url": "https://scryfall.com/search?q=otag%3Amultiple-targets+id%3E%3Du+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
+      "category": "combat",
+      "query": "otag:multiple-targets (otag:tapper or otag:bounce) id>=u (st:expansion r<r)",
+      "url": "https://scryfall.com/search?q=otag%3Amultiple-targets+%28otag%3Atapper+or+otag%3Abounce%29+id%3E%3Du+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Blue spell that stuns or bounces two or more targets"
     },
-
     
-
     
     "chupacabra": {
       "display": "Chupacabra",
       "color": "B",
       "category": "removalbody",
-      "query": "otag:spot-removal t:creature id=b (st:expansion r<r) sort:date",
+      "query": "otag:spot-removal t:creature id=b (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aspot-removal+t%3Acreature+id%3Db+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Black creature that doubles as removal"
     },
@@ -347,8 +359,8 @@
       "display": "Gravedigger",
       "color": "B",
       "category": "body",
+      "query": "otag:regrowth-creature t:creature (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aregrowth-creature+t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
-      "query": "otag:regrowth-creature t:creature (st:expansion r<r) sort:date",
       "help": "Black creature that can return a creature from graveyard to hand"
     },
     "imp": {
@@ -371,6 +383,7 @@
       "display": "Shade",
       "color": "B",
       "category": "body",
+      "query": "otag:mana-sink o:'gets +' id>=b t:creature (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Amana-sink+o%3A%22gets+%2B%22+id%3E%3Db+t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Black creature that can pump its stats for mana"
     },
@@ -378,7 +391,7 @@
       "display": "Typhoid Rat",
       "color": "B",
       "category": "body",
-      "query": "kw:deathtouch id>=b (st:expansion r<r) sort:date",
+      "query": "kw:deathtouch id>=b (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=kw%3Adeathtouch+id%3E%3Db+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=edhrec",
       "help": "Small black creature with deathtouch"
     },
@@ -393,8 +406,9 @@
     "bctop": {
       "display": "Common Topper",
       "color": "B",
+      "category": "misc",
+      "query": "id>=b mv>=5 r:c (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=id%3E%3Db+mv%3E%3D5+r%3Ac+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
-      "query": "id>=b mv>=5 r:c (st:expansion r<r) sort:date",
       "help": "Black common creature at 5+ mana. Landcyclers usually fit here"
     },
     
@@ -419,7 +433,7 @@
       "display": "Contempt",
       "color": "B",
       "category": "removal",
-      "query": "",
+      "query": "otag:spot-removal id=b (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aspot-removal+id%3Db+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Black spell that exiles a creature, usually more expensive"
     },
@@ -440,13 +454,13 @@
       "help": "Black removal spell, no conditions"
     },
     "plague": {
-      "code": "CB15",
       "display": "Plague",
       "color": "B",
       "category": "removal",
       "query": "otag:sweeper otag:removal-toughness (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Asweeper+otag%3Aremoval-toughness+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
-      "help": "Black sweeper that gives a small -N/-N to all creatures"
+      "help": "Black sweeper that gives a small -N/-N to all creatures",
+      "code": "CB15"
     },
     "stab": {
       "code": "CB15",
@@ -486,6 +500,7 @@
     "reanimate": {
       "display": "Reanimate",
       "color": "B",
+      "category": "resource",
       "query": "otag:reanimate-creature (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Areanimate-creature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Return creature from graveyard to battlefield"
@@ -494,27 +509,26 @@
       "display": "Salvage",
       "color": "B",
       "category": "resource",
-      "code": "CB16",
       "query": "otag:regrowth-creature otag:multiple-targets id>=b (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aregrowth-creature+otag%3Amultiple-targets+id%3E%3Db+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
-      "help": "Black spell that returns two cards from graveyard to hand"
+      "help": "Black spell that returns two cards from graveyard to hand",
+      "code": "CB16"
     },
     "signinblood": {
       "display": "Sign in Blood",
       "color": "B",
       "category": "resource",
-      "query": "otag:pure-draw otag:life-for-cards id>=b -t:creature (st:expansion r<r) sort:date",
+      "query": "otag:pure-draw otag:life-for-cards id>=b -t:creature (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Apure-draw+otag%3Alife-for-cards+id%3E%3Db+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Black spell that draws two cards"
     },
-
 
 
     "dragon": {
       "display": "Dragon",
       "color": "R",
       "category": "body",
-      "query": "id>=r t:creature o:flying (st:expansion r<r) sort:date",
+      "query": "id>=r t:creature o:flying (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=id%3E%3Dr+t%3Acreature+o%3Aflying+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Large red creature with flying"
     },
@@ -522,6 +536,7 @@
       "display": "Giant",
       "color": "R",
       "category": "body",
+      "query": "r:c mv>=5 t:creature id=r (st:expansion)",
       "url": "https://scryfall.com/search?q=r%3Ac+mv%3E%3D5+t%3Acreature+id%3Dr+%28st%3Aexpansion%29&order=released",
       "help": "Large red creature at common, defensive"
     },
@@ -529,6 +544,7 @@
       "display": "Opportunist",
       "color": "R",
       "category": "body",
+      "query": "otag:impulsive-draw (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aimpulsive-draw+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": ""
     },
@@ -568,6 +584,7 @@
       "display": "Spellgorger",
       "color": "R",
       "category": "body",
+      "query": "(otag:synergy-noncreature or otag:synergy-sorcery) id>=r r:c (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=%28otag%3Asynergy-noncreature+or+otag%3Asynergy-sorcery%29+id%3E%3Dr+r%3Ac+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Red creature that grows from noncreature spells"
     },
@@ -583,15 +600,15 @@
       "display": "Whelp",
       "color": "R",
       "category": "body",
-      "query": "id>=r t:creature o:flying (st:expansion r<r) sort:date",
+      "query": "id>=r t:creature o:flying (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=id%3E%3Dr+t%3Acreature+o%3Aflying+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Small red creature with flying. May pump its power somehow"
     },
     "rctop": {
       "display": "Common Topper",
       "color": "R",
+      "query": "id>=r mv>=5 r:c (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=id%3E%3Dr+mv%3E%3D5+r%3Ac+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
-      "query": "id>=r mv>=5 r:c (st:expansion r<r) sort:date",
       "help": "Red common creature at 5+ mana. Landcyclers usually fit here"
     },
 
@@ -600,6 +617,7 @@
       "display": "Shock/Bolt",
       "color": "R",
       "category": "removal",
+      "query": "otag:burn (mv:1 or otag:less-expensive-than-mv) (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aburn+%28mv%3A1+or+otag%3Aless-expensive-than-mv%29+r%3Cr+%28st%3Aexpansion%29&unique=cards&as=grid&order=released",
       "help": "Red burn spell. In the range of 1 mana for 2-3 damage."
     },
@@ -607,6 +625,7 @@
       "display": "Strike/Sear",
       "color": "R",
       "category": "removal",
+      "query": "o:'deals 3 damage' r:c (st:expansion)",
       "url": "https://scryfall.com/search?q=o%3A%22deals+3+damage%22+r%3Ac+%28st%3Aexpansion%29&unique=cards&as=grid&order=released",
       "help": "Red burn spell. In the range of 2 mana for 3-4 damage."
     },
@@ -614,6 +633,7 @@
       "display": "Bombard",
       "color": "R",
       "category": "removal",
+      "query": "otag:burn o:'4 damage' mv=3 (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aburn+o%3A%224+damage%22+mv%3D3+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Red burn spell. In the range of 3 mana for 4-5 damage."
     },
@@ -621,6 +641,7 @@
       "display": "Inferno",
       "color": "R",
       "category": "removal",
+      "query": "otag:burn o:'4 damage' mv>=4 (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aburn+o%3A%224+damage%22+mv>%3D4+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Red burn spell at top-end. In the range of 4 mana for 5-6 damage."
     },
@@ -722,7 +743,7 @@
       "display": "Viper",
       "color": "G",
       "category": "body",
-      "query": "kw:deathtouch id>=g (st:expansion r<r) sort:date",
+      "query": "kw:deathtouch id>=g (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=kw%3Adeathtouch+id%3E%3Dg+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=edhrec",
       "help": "Small green creature with deathtouch"
     },
@@ -737,8 +758,8 @@
     "gctop": {
       "display": "Common Topper",
       "color": "G",
+      "query": "id>=g mv>=5 r:c (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=id%3E%3Dg+mv%3E%3D5+r%3Ac+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
-      "query": "id>=g mv>=5 r:c (st:expansion r<r) sort:date",
       "help": "Green common creature at 5+ mana. Landcyclers usually fit here"
     },
 
@@ -789,8 +810,9 @@
       "display": "Giant Growth",
       "color": "G",
       "category": "trick",
+      "query": "id=g otag:enlarge (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aimpulsive-draw+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
-      "help": ""
+      "help": "Green spell that boosts power and toughness"
     },
     "mulch": {
       "display": "Mulch",
@@ -828,12 +850,10 @@
       "display": "Snakeskin",
       "color": "G",
       "category": "trick",
-      "query": "otag:gives-hexproof (id>=g or id>=u) (st:expansion r<r) sort:date",
+      "query": "otag:gives-hexproof (id>=g or id>=u) (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Agives-hexproof+%28id%3E%3Dg+or+id%3E%3Du%29+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Instant-speed spell that grants hexproof"
     },
-
-
 
     
     "cryptkeeper": {
@@ -848,7 +868,7 @@
       "display": "Myr",
       "color": "C",
       "category": "body",
-      "query": "otag:mana-rock (st:expansion r<r) date:year",
+      "query": "otag:mana-rock (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Amana-rock+%28st%3Aexpansion+r%3Cr%29+date%3Ayear&unique=cards&as=grid&order=released",
       "help": "Artifact creature that taps for mana"
     },
@@ -857,15 +877,17 @@
       "display": "Thopter",
       "color": "C",
       "category": "body",
+      "query": "id=c o:flying (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=id%3Dc+o%3Aflying+%28st%3Aexpansion+r%3CR%29&unique=cards&as=grid&order=released",
-      "help": ""
+      "help": "Small colorless flyer"
     },
     "pilgrim": {
       "display": "Surveyor",
       "color": "C",
       "category": "body",
+      "query": "o:'land card' -t:land id=c (st:expansion r<r is:booster)",
       "url": "https://scryfall.com/search?q=o%3A%22land+card%22+-t%3Aland+id%3Dc+%28st%3Aexpansion+r%3Cr+is%3Abooster%29&unique=prints&as=grid&order=released",
-      "help": "Artifact or colorless spell that tutors for a land"
+      "help": "Colorless creature that tutors for a land"
     },
     "boombox": {
       "display": "Boom Box",
@@ -879,28 +901,31 @@
       "display": "Expedition Map",
       "color": "C",
       "category": "resource",
+      "query": "o:'land card' -t:land id=c (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=o%3A%22land+card%22+-t%3Aland+id%3Dc+%28st%3Aexpansion+r%3Cr+is%3Abooster%29&unique=prints&as=grid&order=released",
-      "help": ""
+      "help": "Colorless noncreature that tutors for a land"
     },
     "fetchland": {
       "display": "Fetchland",
       "color": "C",
       "category": "resource",
-      "query": "otag:tutor-land t:land id=c (st:expansion r<r is:booster)",
+      "query": "otag:tutor-land t:land id=c (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Atutor-land+t%3Aland+id%3Dc+%28st%3Aexpansion+r%3Cr+is%3Abooster%29&unique=prints&as=grid&order=released",
       "help": "Land that sacrifices to tutor for another land"
     },
     "kite": {
       "display": "Kite/Wings",
       "color": "C",
+      "category": "combat",
+      "query": "otag:gives-flying is:permanent -t:creature (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Agives-flying+is%3Apermanent+-t%3Acreature+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
-      "query": "otag:gives-flying is:permanent -t:creature (st:expansion r<r) sort:date",
       "help": "Equipment or Aura that gives flying"
     },
     "manarock": {
       "display": "Mana Rock",
       "color": "C",
-      "query": "otag:mana-rock (st:expansion r<r) date:year",
+      "category": "resource",
+      "query": "otag:mana-rock (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Amana-rock+%28st%3Aexpansion+r%3Cr%29+date%3Ayear&unique=cards&as=grid&order=released",
       "help": "Noncreature artifact that taps for mana"
     },
@@ -928,7 +953,7 @@
       "display": "Invoker",
       "color": "X",
       "category": "body",
-      "query": "otag:mana-sink (st:expansion r<r) sort:date",
+      "query": "otag:mana-sink (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Amana-sink+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Permanent with a big mana sink to potentially close out the game"
     },
@@ -936,7 +961,7 @@
       "display": "Outlast",
       "color": "X",
       "category": "body",
-      "query": "otag:mana-sink (st:expansion r<r) sort:date",
+      "query": "otag:mana-sink (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Amana-sink+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Creature that can turn mana into +1/+1 counters"
     },
@@ -944,7 +969,7 @@
       "display": "Rootwalla",
       "color": "X",
       "category": "body",
-      "query": "otag:mana-sink (st:expansion r<r) sort:date",
+      "query": "otag:mana-sink (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Amana-sink+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Creature that can turn mana into a temporary buff once per turn"
     },
@@ -960,7 +985,7 @@
       "display": "Thopterist",
       "color": "X",
       "category": "body",
-      "query": "o:enters o:create o:flying t:creature (st:expansion) date>2021",
+      "query": "o:enters o:create o:flying t:creature (st:expansion)",
       "url": "https://scryfall.com/search?q=o%3Aenters+o%3Acreate+o%3Aflying+t%3Acreature+%28st%3Aexpansion%29+date%3E2021&unique=cards&as=grid&order=artist",
       "help": "Creature that creates a flying token on enter"
     },
@@ -968,7 +993,7 @@
       "display": "Tome",
       "color": "X",
       "category": "resource",
-      "query": "otag:tome (st:expansion) sort:date",
+      "query": "otag:tome (st:expansion)",
       "url": "https://scryfall.com/search?q=otag%3Atome+%28st%3Aexpansion%29&unique=cards&as=grid&order=released",
       "help": "Artifact that provides long-term card advantage for mana"
     },
@@ -976,15 +1001,17 @@
       "display": "Pawnshop",
       "color": "X",
       "category": "resource",
+      "query": "otag:repeatable-sacrifice-outlet otag:repeatable-draw (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Arepeatable-sacrifice-outlet+otag%3Arepeatable-draw+%28st%3Aexpansion+r%3Cr%29+&unique=cards&as=grid&order=released",
-      "help": ""
+      "help": "Card that can sacrifice permanents for cards"
     },
     "halfstrike": {
       "display": "Semi First Strike",
       "color": "X",
       "category": "body",
+      "query": "t:creature o:'first strike' r<r (st:expansion)",
       "url": "https://scryfall.com/search?q=t%3Acreature+o%3A%22first+strike%22+r%3Cr+%28st%3Aexpansion%29&unique=cards&as=grid&order=released",
-      "help": ""
+      "help": "Creature that has first strike only during its controller's turn"
     },
     "swap": {
       "display": "Pathlike",
@@ -2968,6 +2995,132 @@
     "woe/119": "cutdown",
     "mom/129": "cutdown",
     "one/81": "cutdown",
-    "dmu/89": "cutdown"
+    "dmu/89": "cutdown",
+
+    "otj/52": "looter bird",
+    "otj/51": "drake",
+    "mkm/49": "drake stunner",
+    "mkm/65": "bird",
+    "lci/84": "drake",
+    "lci/51": "bigbird",
+    "woe/68": "stunner bird",
+    "mom/73": "drake",
+  
+    "trk/158": "devil",
+    "hob/67": "devil",
+    "ecl/112": "devil",
+    "dft/123": "devil",
+    "dsk/141": "devil",
+    "dsk/97": "devil",
+    "mkm/231": "devil",
+    "mom/157": "devil",
+    "one/124": "devil",
+    "bro/101": "devil",
+    "dmu/116": "devil",
+    "snc/90": "devil",
+    "dmu/109": "devil",
+  
+    "afr/186": "cycle-afr-chromatic-dragon",
+    "afr/160": "cycle-afr-chromatic-dragon",
+    "afr/90": "cycle-afr-chromatic-dragon",
+    "afr/49": "cycle-afr-chromatic-dragon",
+    "afr/41": "cycle-afr-chromatic-dragon",
+    "afr/188": "cycle-afr-color-hate",
+    "afr/135": "cycle-afr-color-hate",
+    "afr/116": "cycle-afr-color-hate",
+    "afr/68": "cycle-afr-color-hate",
+    "afr/12": "cycle-afr-color-hate",
+    "afr/180": "cycle-afr-u-class",
+    "afr/131": "cycle-afr-u-class",
+    "afr/125": "cycle-afr-u-class",
+    "afr/81": "cycle-afr-u-class",
+    "afr/6": "cycle-afr-u-class",
+    "afr/236": "cycle-afr-u-legend",
+    "afr/234": "cycle-afr-u-legend",
+    "afr/231": "cycle-afr-u-legend",
+    "afr/226": "cycle-afr-u-legend",
+    "afr/221": "cycle-afr-u-legend",
+    "afr/223": "cycle-afr-u-legend",
+    "afr/224": "cycle-afr-u-legend",
+    "afr/225": "cycle-afr-u-legend",
+    "afr/219": "cycle-afr-u-legend",
+    "afr/218": "cycle-afr-u-legend",
+    "blb/190": "cycle-blb-c-offspring",
+    "blb/153": "cycle-blb-c-offspring",
+    "blb/117": "cycle-blb-c-offspring",
+    "blb/50": "cycle-blb-c-offspring",
+    "blb/17": "cycle-blb-c-offspring",
+    "blb/32": "joust vengeance cycle-blb-c-typal-boost",
+    "blb/26": "charge cycle-blb-c-typal-boost",
+    "blb/110": "cycle-blb-c-typal-boost",
+    "blb/105": "mindrot cycle-blb-c-typal-boost",
+    "blb/64": "draw2 cycle-blb-c-typal-boost",
+    "blb/45": "manaleak cycle-blb-c-typal-boost",
+    "blb/144": "cycle-blb-c-typal-boost",
+    "blb/156": "tweeze lightning cycle-blb-c-typal-boost",
+    "blb/167": "mulch cycle-blb-c-typal-boost",
+    "blb/189": "bite cycle-blb-c-typal-boost",
+    "soc/331": "cycle-blb-draft-signpost",
+    "blb/240": "manadork cycle-blb-draft-signpost",
+    "blb/238": "cycle-blb-draft-signpost",
+    "blb/236": "cycle-blb-draft-signpost",
+    "blb/222": "cycle-blb-draft-signpost",
+    "blb/228": "cycle-blb-draft-signpost",
+    "blb/231": "pridemate cycle-blb-draft-signpost",
+    "blb/233": "cycle-blb-draft-signpost",
+    "blb/213": "cycle-blb-draft-signpost",
+    "blb/206": "cycle-blb-draft-signpost",
+    "blb/200": "cycle-blb-duo",
+    "blb/163": "cycle-blb-duo",
+    "blb/150": "cycle-blb-duo",
+    "blb/89": "cycle-blb-duo",
+    "blb/96": "vamp cycle-blb-duo",
+    "blb/142": "pinger ponger cycle-blb-duo",
+    "blb/20": "cycle-blb-duo",
+    "blb/3": "cycle-blb-duo",
+    "blb/71": "bigbird flicker cycle-blb-duo",
+    "blb/210": "cycle-blb-hybrid",
+    "blb/208": "cycle-blb-hybrid",
+    "blb/220": "cycle-blb-hybrid",
+    "blb/216": "cycle-blb-hybrid",
+    "blb/225": "cycle-blb-hybrid",
+    "blb/226": "imp cycle-blb-hybrid",
+    "blb/237": "cycle-blb-hybrid",
+    "blb/235": "spellgorger cycle-blb-hybrid",
+    "blb/232": "cycle-blb-hybrid",
+    "blb/229": "cantripper cycle-blb-hybrid",
+    "blb/166": "cycle-blb-u-offspring",
+    "blb/131": "ponger cycle-blb-u-offspring",
+    "blb/116": "cycle-blb-u-offspring",
+    "blb/73": "stunner cycle-blb-u-offspring",
+    "blb/14": "cycle-blb-u-offspring",
+    "blb/179": "bite cycle-blb-u-talent",
+    "blb/125": "cycle-blb-u-talent",
+    "blb/83": "cycle-blb-u-talent",
+    "blb/51": "cycle-blb-u-talent",
+    "blb/5": "cycle-blb-u-talent",
+    "bro/171": "cycle-bro-basic-land-count",
+    "bro/151": "cycle-bro-basic-land-count",
+    "bro/88": "cycle-bro-basic-land-count",
+    "bro/49": "thirst cycle-bro-basic-land-count",
+    "bro/11": "cycle-bro-basic-land-count",
+    "bro/172": "cycle-bro-c-mulch",
+    "bro/153": "cycle-bro-c-mulch",
+    "bro/113": "gravedigger cycle-bro-c-mulch",
+    "bro/48": "cycle-bro-c-mulch",
+    "bro/2": "cycle-bro-c-mulch",
+    "bro/228": "cycle-bro-draft-signpost",
+    "bro/227": "cycle-bro-draft-signpost",
+    "bro/223": "cycle-bro-draft-signpost",
+    "bro/221": "cycle-bro-draft-signpost",
+    "bro/209": "cycle-bro-draft-signpost",
+    "bro/210": "cycle-bro-draft-signpost",
+    "bro/213": "cycle-bro-draft-signpost",
+    "bro/214": "cycle-bro-draft-signpost",
+    "bro/207": "cycle-bro-draft-signpost",
+    "bro/206": "cycle-bro-draft-signpost",
+    "bro/239": "cycle-bro-tron-worker",
+    "bro/241": "cycle-bro-tron-worker",
+    "bro/255": "myr cycle-bro-tron-worker"
   }
 }
