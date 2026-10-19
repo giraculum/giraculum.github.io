@@ -1039,7 +1039,7 @@
       "help": "Artifact that provides long-term card advantage for mana"
     },
     "pawnshop": {
-      "display": "Pawnshop",
+      "display": "Recycler",
       "color": "X",
       "category": "resource",
       "query": "otag:repeatable-sacrifice-outlet otag:repeatable-draw (st:expansion r<r)",
