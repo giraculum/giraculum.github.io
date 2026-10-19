@@ -40,6 +40,14 @@
       "url": "https://scryfall.com/search?q=kw%3Aflying+t%3Acreature+id%3Dw+%28st%3Aexpansion+r%3Au%29&unique=cards&as=grid&order=released",
       "help": "White uncommon with large stats and flying"
     },
+    "support": {
+      "display": "Supporter",
+      "color": "W",
+      "category": "body",
+      "query": "otag:gives-pp-counters -otag:repeatable-pp-counters id>=w (st:expansion r<r)",
+      "url": "https://scryfall.com/search?as=grid&order=released&q=otag%3Agives-pp-counters+-otag%3Arepeatable-pp-counters+id%3E%3Dw+%28st%3Aexpansion+r%3Cr%29&unique=cards",
+      "help": "Creature that shares +1/+1 counters when it enters"
+    },
     "tokens": {
       "display": "Reinforcements",
       "color": "W",
@@ -161,25 +169,37 @@
       "url": "https://scryfall.com/search?q=t%3Aequipment+id%3E%3Dw+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "White equipment with a small buff"
     },
-    "support": {
-      "display": "Supporter",
+    "preparations": {
+      "display": "Preparations",
       "color": "W",
-      "category": "body",
-      "query": "otag:gives-pp-counters -otag:repeatable-pp-counters id>=w (st:expansion r<r)",
-      "url": "https://scryfall.com/search?as=grid&order=released&q=otag%3Agives-pp-counters+-otag%3Arepeatable-pp-counters+id%3E%3Dw+%28st%3Aexpansion+r%3Cr%29&unique=cards",
-      "help": "Creature that shares +1/+1 counters when it enters"
+      "category": "combat",
+      "query": "otag:gives-pp-counters -t:creature (st:expansion r<r)",
+      "help": "Spell that distributes +1/+1 counters for a go-wide strategy"
     },
 
 
 
-    
+    "bird": {
+      "display": "Strix",
+      "color": "U",
+      "category": "body",
+      "query": "id=u r:c kw:flying mv<=3 (st:expansion)",
+      "help": "Blue flyer with small stats. 2 mana 1/1"
+    },
+    "drake": {
+      "display": "Drake",
+      "color": "U",
+      "category": "body",
+      "query": "id=u r:c kw:flying pow<=3 (st:expansion)",
+      "help": "Blue flyer with medium stats. 3 mana 2/2"
+    },
     "bigbird": {
-      "display": "Big Bird",
+      "display": "Skywhale",
       "color": "U",
       "category": "body",
       "query": "id=u r:c kw:flying mv>=5 (st:expansion)",
       "url": "https://scryfall.com/search?q=id%3Du+r%3Ac+kw%3Aflying+mv%3E%3D5+%28st%3Aexpansion%29&unique=cards&as=grid&order=released",
-      "help": "Blue creature with flying for 4+ mana"
+      "help": "Blue flyer with large stats. 5 mana 3/3"
     },
     "bluedork": {
       "display": "Blue Dork",
@@ -548,6 +568,13 @@
       "url": "https://scryfall.com/search?q=otag%3Aimpulsive-draw+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": ""
     },
+    "devil": {
+      "display": "Parting Shot",
+      "color": "R",
+      "category": "body",
+      "query": "otag:death-trigger-self (otag:spot-removal or otag:burn) st:expansion r<r",
+      "help": "Creature that has a small removal effect when it dies, like damage or -1/-1"
+    },
     "pinger": {
       "display": "Pinger",
       "color": "R",
@@ -563,6 +590,13 @@
       "query": "otag:pinger (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Apinger+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Small red creature with a trigger that deals 1 or 2 damage"
+    },
+    "pirate": {
+      "display": "Plunderer",
+      "color": "R",
+      "category": "body",
+      "query": "(otag:mini-refund or (t:creature o:enters o:treasure)) (st:expansion r<r)",
+      "help": "Creature that makes a treasure when it enters. (Often medium-sized)"
     },
     "reddork": {
       "display": "Red Dork",
@@ -854,6 +888,13 @@
       "url": "https://scryfall.com/search?q=otag%3Agives-hexproof+%28id%3E%3Dg+or+id%3E%3Du%29+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Instant-speed spell that grants hexproof"
     },
+    "farm": {
+      "display": "Counter Engine",
+      "color": "G",
+      "category": "board",
+      "query": "otag:gives-pp-counters -t:creature (st:expansion r<r)",
+      "help": "Permanent that repeatably gives +1/+1 counters"
+    },
 
     
     "cryptkeeper": {
@@ -1028,6 +1069,34 @@
       "query": "otag:overrun (st:expansion r<r)",
       "url": "https://scryfall.com/search?q=otag%3Aoverrun+%28st%3Aexpansion+r%3Cr%29&unique=cards&as=grid&order=released",
       "help": "Spell that punmps the board and gives trample"
+    },
+    "filterland": {
+      "display": "Filterland",
+      "color": "M",
+      "category": "land",
+      "query": "otag:filterland (st:expansion r<r)",
+      "help": "Land that can turn mana into colored mana"
+    },
+    "typeland": {
+      "display": "Typeland",
+      "color": "M",
+      "category": "land",
+      "query": "t:land id=c (st:expansion r<r)",
+      "help": "Land that taps for colorless, or any color for a specific typeland"
+    },
+    "chooseland": {
+      "display": "Chooseland",
+      "color": "M",
+      "category": "land",
+      "query": "t:land id=c (st:expansion r<r)",
+      "help": "Land that taps for colorless, or any color for a specific typeland"
+    },
+    "costland": {
+      "display": "Costland",
+      "color": "M",
+      "category": "land",
+      "query": "t:land id=c (st:expansion r<r)",
+      "help": "Land that has a cost to be played"
     }
   },
   "templateListing": {
@@ -3018,6 +3087,93 @@
     "bro/101": "devil",
     "dmu/116": "devil",
     "snc/90": "devil",
-    "dmu/109": "devil"
+    "dmu/109": "devil",
+    "hob/94": "pirate",
+    "sos/117": "pirate",
+    "ecl/237": "pirate",
+    "ecl/140": "pirate",
+    "spm/110": "pirate",
+    "tdm/112": "pirate",
+    "otj/135": "pirate",
+    "lci/160": "pirate",
+    "woe/147": "pirate",
+    "snc/106": "pirate",
+    "hob/153": "support",
+    "hob/184": "fetchland",
+    "fra/158": "murder",
+    "fra/16": "preparations",
+    "hob/21": "preparations",
+    "sos/10": "preparations",
+    "sos/9": "flicker preparations",
+    "tla/185": "preparations",
+    "spm/15": "giantkiller snakeskinu",
+    "spm/5": "preparations",
+    "tdm/162": "preparations",
+    "tdm/10": "shield preparations",
+    "dsk/15": "preparations",
+    "otj/26": "disenchant preparations",
+    "mkm/248": "preparations",
+    "mkm/156": "preparations",
+    "mom/206": "overrun preparations",
+    "dmu/180": "preparations",
+  
+    "msh/274": "filterland",
+    "msh/261": "filterland",
+    "tla/281": "filterland",
+    "tla/277": "filterland",
+    "spm/179": "filterland",
+    "fin/274": "filterland",
+    "blb/254": "filterland",
+    "otj/254": "filterland",
+    "lci/268": "filterland",
+    "woe/254": "filterland",
+    "tmt/184": "fetchland",
+    "sos/265": "fetchland",
+    "fra/188": "chooseland",
+    "fin/276": "chooseland",
+    "dft/258": "chooseland",
+    "blb/261": "chooseland",
+    "otj/262": "chooseland",
+    "woe/255": "chooseland",
+    "neo/275": "chooseland typeland",
+    "neo/270": "typeland",
+    "lci/278": "chooseland",
+    "mkm/265": "costland",
+    "otj/252": "costland",
+    "otj/265": "typeland",
+    "eoe/252": "costland",
+    "ecl/263": "chooseland typeland",
+    "tmt/190": "typeland",
+    "msh/260": "typeland",
+    "msh/276": "typeland",
+  
+    "trk/216": "farm",
+    "hob/120": "farm",
+    "msh/192": "farm",
+    "msh/163": "farm",
+    "sos/16": "farm",
+    "sos/139": "farm",
+    "fin/197": "farm",
+    "mkm/156": "preparations farm",
+    "woe/30": "farm",
+    "bro/114": "farm",
+    "neo/223": "farm",
+    "neo/204": "farm",
+  
+    "fra/27": "stunner",
+    "blb/233": "angel",
+  
+    "msh/73": "drake",
+    "ecl/50": "twiddler drake",
+    "tla/56": "drake",
+    "fin/49": "drake",
+    "dft/44": "drake",
+    "dsk/54": "drake",
+    "blb/50": "drake",
+    "woe/62": "drake",
+    "one/53": "drake",
+    "bro/73": "drake",
+    "dmu/66": "drake",
+    "neo/66": "drake"
   }
 }
